@@ -11,61 +11,61 @@ dotenv.config({ path: path.resolve(__dirname, ".env") });
 const users = [
   {
     name: "Admin User",
-    email: "admin@eventora.com",
+    email: "admin@eventhora.com",
     password: "password123",
     role: "admin",
   },
   {
     name: "Demo User",
-    email: "user@eventora.com",
+    email: "user@eventhora.com",
     password: "password123",
     role: "user",
   },
   {
     name: "Alice Smith",
-    email: "alice@eventora.com",
+    email: "alice@eventhora.com",
     password: "password123",
     role: "user",
   },
   {
     name: "Bob Johnson",
-    email: "bob@eventora.com",
+    email: "bob@eventhora.com",
     password: "password123",
     role: "user",
   },
   {
     name: "Charlie Dave",
-    email: "charlie@eventora.com",
+    email: "charlie@eventhora.com",
     password: "password123",
     role: "user",
   },
   {
     name: "Diana Prince",
-    email: "diana@eventora.com",
+    email: "diana@eventhora.com",
     password: "password123",
     role: "user",
   },
   {
     name: "Ethan Hunt",
-    email: "ethan@eventora.com",
+    email: "ethan@eventhora.com",
     password: "password123",
     role: "user",
   },
   {
     name: "Fiona Gallagher",
-    email: "fiona@eventora.com",
+    email: "fiona@eventhora.com",
     password: "password123",
     role: "user",
   },
   {
     name: "George Miller",
-    email: "george@eventora.com",
+    email: "george@eventhora.com",
     password: "password123",
     role: "user",
   },
   {
     name: "Hannah Montana",
-    email: "hannah@eventora.com",
+    email: "hannah@eventhora.com",
     password: "password123",
     role: "user",
   },
@@ -149,7 +149,7 @@ const events = [
 const seedDatabase = async () => {
   try {
     await mongoose.connect(
-      process.env.MONGO_URI || "mongodb://localhost:27017/eventora",
+      process.env.MONGO_URI || "mongodb://localhost:27017/eventhora",
     );
     console.log("\n✅ MongoDB connection open...");
 
@@ -229,8 +229,8 @@ const seedDatabase = async () => {
 
     console.log("\n🚀 Database seeded successfully!");
     console.log("-------------------------------------------");
-    console.log("Admin Email: admin@eventora.com");
-    console.log("User Email:  user@eventora.com");
+    console.log("Admin Email: admin@eventhora.com");
+    console.log("User Email:  user@eventhora.com");
     console.log("Password for all users: password123");
     console.log("-------------------------------------------\n");
 

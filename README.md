@@ -1,6 +1,6 @@
-# Eventora
+# EventHora
 
-Eventora is a full-stack event booking platform with a React + Vite frontend and an Express + MongoDB backend.
+EventHora is a full-stack event booking platform with a React + Vite frontend and an Express + MongoDB backend.
 
 ## Project Structure
 
@@ -28,7 +28,7 @@ Update `server/.env` with your real values:
 
 ```env
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/eventora
+MONGO_URI=mongodb://localhost:27017/eventhora
 JWT_SECRET=your_jwt_secret
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_password
@@ -91,16 +91,18 @@ The `client/vercel.json` file adds an SPA rewrite so direct navigation to React 
 
 ### Backend deployment
 
-1. Create a Node.js service from the `server` folder.
+1. Create a Node.js web service from this repository using the `render.yaml` blueprint, or create a manual service from the `server` folder.
 2. Set the production environment variables listed above.
 3. Point `CLIENT_URL` and `CORS_ORIGIN` to your deployed frontend URL, for example:
 
 ```env
-CLIENT_URL=https://eventora.vercel.app
-CORS_ORIGIN=https://eventora.vercel.app
+CLIENT_URL=https://eventhora.vercel.app
+CORS_ORIGIN=https://eventhora.vercel.app
 ```
 
 4. Start the server with `node index.js` or `npm start`.
+
+If you use the blueprint, Render will read the backend service settings from [`render.yaml`](/G:/web%20Development/EVENTORA/render.yaml).
 
 ### MongoDB
 
